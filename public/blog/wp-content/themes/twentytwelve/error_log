@@ -1,0 +1,2 @@
+[28-Oct-2013 08:38:05] PHP Fatal error:  Call to undefined function  get_header() in /home/startups/public_html/blog/wp-content/themes/twentytwelve/tag.php on line 14
+[27-Dec-2013 11:51:36] PHP Fatal error:  Call to undefined function  get_header() in /home/startups/public_html/blog/wp-content/themes/twentytwelve/404.php on line 10

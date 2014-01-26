@@ -1,0 +1,549 @@
+/* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-bottom: 40px;
+      color: #5a5a5a;
+      font-family: 'Oswald', sans-serif
+    }
+
+    p{
+      font-family: 'Droid Sans',sans-serif;
+
+    }
+
+    footer{
+      background-color: rgb(43, 43, 43);
+      min-height: 250px;
+      margin-bottom: -40px;
+    }
+
+    h2{
+color: rgb(27,165,74);
+
+    }
+
+    .sponsors{
+      background: rgb(27,165,74);
+      margin-top: 30px;
+
+    }
+
+    
+/* Social Media */
+
+#siteinfo {
+position:fixed;
+  width:50px;
+  top:20%;
+   z-index: 100000000;
+}
+
+
+
+
+/*IMAGE ROTATION*/
+
+.card-wrapper {
+  position: relative;
+  width: 136px;
+  height: 135px;
+  z-index: 1;
+}
+
+.card-wrapper2 {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+}
+
+.card-wrapper img {
+}
+
+.face.back {
+  display: none; 
+}
+
+.face2.back2 {
+  display: none; 
+}
+.card-wrapper {
+  -webkit-perspective: 1000;
+}
+.card-wrapper2 {
+  -webkit-perspective: 1000;
+}
+
+.card {
+width: 136px;
+  height: 135px; 
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transform-style: preserve-3d;
+  -moz-transition: all 0.15s linear;
+  -o-transform-style: preserve-3d;
+  -o-transition: all 0.15s linear;
+  -ms-transform-style: preserve-3d;
+  -ms-transition: all 0.15s linear;
+  transform-style: preserve-3d;
+  transition: all 0.15s linear;
+/*  -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  -moz-box-shadow:    0 0 5px rgba(0,0,0,0.5);
+  box-shadow:         0 0 5px rgba(0,0,0,0.5);*/
+}
+
+.card2 {
+width: 200px;
+  height: 200px; 
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transform-style: preserve-3d;
+  -moz-transition: all 0.15s linear;
+  -o-transform-style: preserve-3d;
+  -o-transition: all 0.15s linear;
+  -ms-transform-style: preserve-3d;
+  -ms-transition: all 0.15s linear;
+  transform-style: preserve-3d;
+  transition: all 0.15s linear;
+/*  -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  -moz-box-shadow:    0 0 5px rgba(0,0,0,0.5);
+  box-shadow:         0 0 5px rgba(0,0,0,0.5);*/
+}
+
+.card-wrapper:hover .card {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-box-shadow: 0 0 0px #000;
+  -moz-box-shadow:    0 0 0px #000;
+  box-shadow:         0 0 0px #000;
+}
+
+.card-wrapper2:hover .card2 {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-box-shadow: 0 0 0px #000;
+  -moz-box-shadow:    0 0 0px #000;
+  box-shadow:         0 0 0px #000;
+}
+.face {
+  position: absolute;
+  width: 136px;
+  height: 135px;
+  overflow: hidden;
+  -webkit-backface-visibility:  hidden;
+  -moz-backface-visibility:     hidden;
+  -o-backface-visibility:       hidden;
+  -ms-backface-visibility:      hidden;
+  backface-visibility:          hidden;
+}
+
+.face2 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  -webkit-backface-visibility:  hidden;
+  -moz-backface-visibility:     hidden;
+  -o-backface-visibility:       hidden;
+  -ms-backface-visibility:      hidden;
+  backface-visibility:          hidden;
+}
+
+.face.back {
+  display: block;
+  visibility: hidden;
+  background-repeat: no-repeat;
+  background-color: #fff;
+   background-size: 136px 135px;
+  background-position: center center;
+  -webkit-transform: rotateY(180deg);
+  -webkit-box-sizing: border-box;
+  -moz-transform: rotateY(180deg);
+  -moz-box-sizing: border-box;
+  -o-transform: rotateY(180deg);
+  -o-box-sizing: border-box;    
+  -ms-transform: rotateY(180deg);
+  -ms-box-sizing: border-box;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+}
+
+.face2.back2 {
+  display: block;
+  visibility: hidden;
+  background-repeat: no-repeat;
+  background-color: rgb(27,165,74);
+   background-size:200px 200px;
+  background-position: center center;
+  -webkit-transform: rotateY(180deg);
+  -webkit-box-sizing: border-box;
+  -moz-transform: rotateY(180deg);
+  -moz-box-sizing: border-box;
+  -o-transform: rotateY(180deg);
+  -o-box-sizing: border-box;    
+  -ms-transform: rotateY(180deg);
+  -ms-box-sizing: border-box;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+}
+
+.card-wrapper:hover .back {
+  visibility: visible;
+}
+.card-wrapper2:hover .back2 {
+  visibility: visible;
+}
+
+
+/* CONTENT */
+
+#video{
+
+background-image: url(../img/video.png);  
+background-repeat:no-repeat;
+background-position:center top; 
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  color: #FFF;
+
+min-height: 400px;
+min-width: 100%;
+
+}
+
+#video span{
+
+width: 50%;
+text-align: center;
+
+
+}
+  
+
+
+/* PARALAX */
+
+#homeBanner {
+  margin-top: 125px;
+  background-color: #132b2b;
+
+
+  background-image: url(../img/coverTSS.png);   
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center top;     
+
+  height: 450px;
+  display: block;
+  margin: 125px auto 0;
+  width: 100%;
+  position: relative;
+  padding-top: 1px;
+  overflow: hidden;
+  background-color: #dddddd;
+  }
+
+#bannerText{
+
+font-size: 50px;
+font-family: 'Oswald', sans-serif;
+margin-top: 10px; 
+text-align: center;
+opacity: 1;
+color: #FFF;
+line-height: 64px;
+
+ /*text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 rgba(185, 185, 185, 0), 0 5px 0 rgba(170, 170, 170, 0), 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15)
+*/}
+
+#bannerText h2{
+
+
+ text-shadow: 0 2px 0 rgba(204, 204, 204, 0), 0 1px 0 rgba(201, 201, 201, 0), 0 3px 0 rgba(187, 187, 187, 0), 0 4px 0 rgba(185, 185, 185, 0), 0 5px 0 rgba(170, 170, 170, 0), 0 6px 17px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 -3px 17px rgba(0, 0, 0, 0.27), 0 3px 11px rgb(0, 0, 0), 0 5px 10px rgba(0, 0, 0, 0.79), 0 10px 10px rgba(0, 0, 0, 0.53), 0 20px 20px rgba(0,0,0,.15)
+
+
+}
+
+
+
+/* Customize the navbar links to be fill the entire space of the .navbar */
+
+.my-sticky-element.stuck {
+position: fixed;
+top: 0;
+box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+z-index: 1000;
+width: 100%;
+}
+
+
+
+header.large{ 
+  height: 126px;
+background: #1ba54a;
+background: -moz-linear-gradient(top,  #1ba54a 2%, #13a343 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,#1ba54a), color-stop(100%,#13a343));
+background: -webkit-linear-gradient(top,  #1ba54a 2%,#13a343 100%);
+background: -o-linear-gradient(top,  #1ba54a 2%,#13a343 100%);
+background: -ms-linear-gradient(top,  #1ba54a 2%,#13a343 100%);
+background: linear-gradient(to bottom,  #1ba54a 2%,#13a343 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1ba54a', endColorstr='#13a343',GradientType=0 );
+
+
+  }
+header.large img{ width: 184px; }
+header.large li{ 
+
+  margin-top: 45px;
+  font-size: 25px;
+ }
+
+
+header.small{ 
+  height: 94px;
+  background-color: rgba(27,165,74,0.9);
+  margin: -20px;
+   }
+header.small img{ width: 100px;  }
+header.small li{ 
+  margin-top: 0px;
+  font-size: 20px;
+  
+  }
+
+header,nav, a, img, li{
+  transition: all 0.5s;
+  -moz-transition: all 0.5s; /* Firefox 4 */
+  -webkit-transition: all 0.5s; /* Safari and Chrome */
+  -o-transition: all 0.5s; /* Opera */
+  color: #FFF!important;
+  text-shadow: 0 0px 0 #ffffff;
+}
+
+
+a:hover{
+
+  color: rgb(167,167,167)!important;
+  text-decoration: none;
+}
+
+.navbar{
+  height: 0px !important;
+  margin-bottom: 0px;
+
+}
+
+.navbar .navbar-inner {
+    padding: 0;
+}
+
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+    color: rgb(162, 162, 162);
+    -webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.125);
+    background-color:transparent; }
+
+
+.navbar .nav {
+    margin: 0;
+    display: table;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.navbar .nav li {
+    display: table-cell;
+    width: 1%;
+    float: none;
+}
+
+.navbar .nav li a {
+    font-weight: bold;
+    text-align: center;
+    border-left: 0;
+    border-right: 0;
+    padding: 0px;
+    color: rgb(223, 223, 223);
+    text-shadow: 0 0px 0 #ffffff;
+    /*
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 rgb(201, 201, 201), 0 3px 0 rgba(187, 187, 187, 0), 0 4px 0 rgba(185, 185, 185, 0), 0 5px 0 rgba(170, 170, 170, 0), 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15)
+  */
+}
+
+.navbar .nav li:first-child a {
+    border-left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.navbar .nav li:last-child a {
+    border-right: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: 0 0;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        width: auto;
+        height: 500px;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 640px) {
+
+      header.large{ 
+  height: 96px;
+  background-color: rgb(0,133,0);
+  }
+header.large img{ width: 184px; }
+header.large li{ 
+
+  margin-top: 45px;
+  font-size: 20px;
+ }
+
+
+header.small{ 
+  height: 70px;
+  background-color: rgba(0,133,0,0.9);
+  margin: -20px;
+   }
+header.small img{ width: 100px;  }
+header.small li{ 
+  margin-top: 0px;
+  font-size: 19px;
+  
+  }
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel .item {
+        height: 300px;
+      }
+      .carousel img {
+        height: 300px;
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+    }

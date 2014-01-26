@@ -1,0 +1,22 @@
+{
+  "name": "startupscholarship.org",
+  "version": "0.0.0",
+  "description": "Webpage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/diasdavid/startupscholarship.org"
+  },
+  "author": "David Dias <daviddias.p@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/diasdavid/startupscholarship.org/issues"
+  },
+  "dependencies": {
+    "node-static": "~0.7.3"
+  }
+}
